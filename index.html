@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Final 1620</title>
 </head>
-
 <body>
     <h1>Welcome to our gallery</h1>
-    <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+    <div id='instruction'>
+        <p>Hover on any thumbnail to see it bigger</p>
+    </div>
+    <div id="thumb-bar">
+    </div>
+    <img src="images/pic1.jpg" alt="Display Picture" class="displayed-img">
+    <div class="submission">    
+        <label>What effect do you want to apply?</label>
+        <input id="effect" type="text">
+        <button>Submit</button>
+    </div>
 </body>
-
+<script src="app.js"></script>
 </html>
