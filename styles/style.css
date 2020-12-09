@@ -1,3 +1,92 @@
 div img {
     width: 20%;
 }
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    grid-area: title;
+}
+@media only screen and (min-width: 640px) {
+    body {
+        margin: 0 auto;
+        width: 640px;
+        display: grid;
+        grid-template-areas: 'title'
+                             'instruction'
+                             'thumbnail'
+                             'preview'
+                             'submission';
+        font-size: 1.1rem;
+    }
+
+    /* Instruction */
+    #instruction {
+        grid-area: instruction;
+    }
+
+    /* Thumbnail */
+    #thumb-bar {
+        grid-area: thumbnail;
+    }
+    .thumbnail {
+        display: inline-flex;
+    }
+    /* Preview */
+    .displayed-img {
+        grid-area: preview;
+    }
+
+    /* Submission */
+    .submission {
+        grid-area: submission;
+        margin: 5% 3%;
+    }
+
+    #effect {
+        margin: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    * {
+        width: 100%;
+    }
+    
+    /* Thumbnail and Preview*/
+    body {
+        margin: 0 10%;
+        width: 80%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 'title'
+                             'instruction'
+                             'thumbnail'
+                             'preview'
+                             'submission';
+        font-size: 1.5rem;
+    }
+    
+    /* Submission */
+    .submission {
+        text-align: center;
+    }
+
+    #effect {
+        margin: 0;
+        width: 40%;
+        justify-self: center;
+    }
+
+    button {
+        width: 20%;
+        justify-self: center;
+    }            
+    
+}
